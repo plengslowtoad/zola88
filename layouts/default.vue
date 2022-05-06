@@ -1,17 +1,201 @@
 <template>
   <v-app>
-    <v-row >
-      <v-col cols="12" >asd</v-col>
-    </v-row>
     <v-main>
-      <v-container>
-        <v-row>
+      <v-container fluid class="pa-0">
+        <v-row no-gutters>
+          <v-col
+            cols="12"
+            class="
+              tw-h-[337px]
+              pa-0
+              m-0
+              d-flex
+              justify-center
+              align-center
+              bg-header
+            "
+          >
+            <div>
+              <v-img
+                :src="require('../assets/logo-footer.png')"
+                height="300px"
+                width="300px"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col
+            cols="12"
+            class="tw-h-[65px] tw-bg-[#173C5D] d-flex justify-end align-center"
+          >
+            <span
+              class="
+                tw-bg-gradient-to-t
+                tw-from-[#F7E18E]
+                tw-to-[#394B58]
+                tw-text-[33px]
+                tw-font-[1000]
+                tw-bg-clip-text
+                tw-text-transparent
+                px-5
+              "
+              >หน้าหลัก</span
+            >
+            <span
+              class="
+                tw-bg-gradient-to-t
+                tw-from-[#F7E18E]
+                tw-to-[#394B58]
+                tw-text-[33px]
+                tw-font-[1000]
+                tw-bg-clip-text
+                tw-text-transparent
+                px-5
+              "
+              >โปรโมชั่น</span
+            >
+            <span
+              class="
+                tw-bg-gradient-to-t
+                tw-from-[#F7E18E]
+                tw-to-[#394B58]
+                tw-text-[33px]
+                tw-font-[1000]
+                tw-bg-clip-text
+                tw-text-transparent
+                px-5
+              "
+              >บทความ</span
+            >
+            <span
+              class="
+                tw-bg-gradient-to-t
+                tw-from-[#F7E18E]
+                tw-to-[#394B58]
+                tw-text-[33px]
+                tw-font-[1000]
+                tw-bg-clip-text
+                tw-text-transparent
+                px-5
+              "
+              >วิธีเล่น</span
+            >
+            <span
+              class="
+                tw-bg-gradient-to-t
+                tw-from-[#F7E18E]
+                tw-to-[#394B58]
+                tw-text-[33px]
+                tw-font-[1000]
+                tw-bg-clip-text
+                tw-text-transparent
+                pl-5
+                tw-pr-[120px]
+              "
+              >ติดต่อเรา</span
+            >
+          </v-col>
           <Nuxt />
         </v-row>
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer class="tw-p-0">
+      <v-row no-gutters>
+        <v-col cols="12" class="tw-h-[650px] tw-bg-[red]">
+          <v-row no-gutters justify="center">
+            <v-col cols="12" class="d-flex justify-center pt-5">
+              <div>
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="289px"
+                  width="291px"
+                ></v-img>
+              </div>
+            </v-col>
+            <v-col cols="12" class="d-flex justify-center pt-5">
+              <span>ฝาก – ถอน กับธนาคารชั้นนำ</span>
+            </v-col>
+            <v-col cols="12" class="d-flex justify-center pt-5">
+              <span>ตลอด 24 ชม.</span>
+            </v-col>
+            <v-col cols="12" class="d-flex justify-center pt-5">
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+            </v-col>
+            <v-col cols="12" class="d-flex justify-center pt-5">
+              <span>รองรับทั้งระบบ IOS & ANDROID</span>
+            </v-col>
+            <v-col cols="4"></v-col>
+            <v-col cols="4" class="d-flex justify-center pt-5">
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+            </v-col>
+            <v-col cols="4" class="d-flex justify-start pt-5">
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-footer.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" class="d-flex justify-center">
+          <span>COPYRIGHT © 2021. ZOLA88.COM. ALL RIGHT RESERVED.</span>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
@@ -24,3 +208,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.bg-header {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/bg-header.png");
+}
+</style>
