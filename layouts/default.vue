@@ -206,7 +206,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .bg-header {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
