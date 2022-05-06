@@ -3,8 +3,8 @@
     <v-row no-gutters>
       <HeaderDetail header="บทความ" />
     </v-row>
-    <p>article</p>
-    <div class="app-section">
+    <!-- <p>article</p> -->
+    <!-- <div class="app-section">
       <div class="app-container">
         <div class="app-grid">
           <div
@@ -17,6 +17,18 @@
             <h6>{{ item.content }}</h6>
           </div>
         </div>
+      </div>
+    </div> -->
+
+    <div class="tw-grid tw-grid-rows-2 tw-grid-flow-col gap-4">
+      <div
+        class="tattoo-item mt-4"
+        v-for="(item, index) in articlesListMock"
+        :key="index"
+      >
+        <img :src="item.src" alt="" />
+        <h4>{{ item.title }}</h4>
+        <h6>{{ item.content }}</h6>
       </div>
     </div>
   </v-col>
