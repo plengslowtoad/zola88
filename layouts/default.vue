@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <v-row> ASDF </v-row>
+    <v-row >
+      <v-col cols="12" >asd</v-col>
+    </v-row>
     <v-main>
       <v-container>
         <v-row>
