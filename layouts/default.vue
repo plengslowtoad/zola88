@@ -100,7 +100,7 @@
     </v-main>
     <v-footer class="tw-p-0">
       <v-row no-gutters>
-        <v-col cols="12" class="tw-h-[650px] tw-bg-[red]">
+        <v-col cols="12" class="tw-h-[720px] tw-bg-[red]">
           <v-row no-gutters justify="center">
             <v-col cols="12" class="d-flex justify-center pt-5">
               <div>
@@ -112,81 +112,78 @@
               </div>
             </v-col>
             <v-col cols="12" class="d-flex justify-center pt-5">
-              <span>ฝาก – ถอน กับธนาคารชั้นนำ</span>
+              <span class="tw-text-white tw-font-[400] tw-text-[26px]"
+                >ฝาก – ถอน กับธนาคารชั้นนำ</span
+              >
             </v-col>
             <v-col cols="12" class="d-flex justify-center pt-5">
-              <span>ตลอด 24 ชม.</span>
+              <span class="tw-text-white tw-font-[400] tw-text-[32px]"
+                >ตลอด 24 ชม.</span
+              >
             </v-col>
             <v-col cols="12" class="d-flex justify-center pt-5">
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
+                  :src="require('../assets/logo-scb.png')"
                   height="60px"
                   width="60px"
                 ></v-img
               ></span>
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
+                  :src="require('../assets/logo-ktb.png')"
                   height="60px"
                   width="60px"
                 ></v-img
               ></span>
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
+                  :src="require('../assets/logo-krungsri.png')"
                   height="60px"
                   width="60px"
                 ></v-img
               ></span>
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
+                  :src="require('../assets/logo-gsb.png')"
+                  height="60px"
+                  width="60px"
+                ></v-img
+              ></span>
+              <span class="px-3">
+                <v-img
+                  :src="require('../assets/logo-ttb.png')"
                   height="60px"
                   width="60px"
                 ></v-img
               ></span>
             </v-col>
             <v-col cols="12" class="d-flex justify-center pt-5">
-              <span>รองรับทั้งระบบ IOS & ANDROID</span>
+              <span class="tw-text-white tw-font-[400] tw-text-[26px]"
+                >รองรับทั้งระบบ IOS & ANDROID</span
+              >
             </v-col>
             <v-col cols="4"></v-col>
             <v-col cols="4" class="d-flex justify-center pt-5">
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
-                  height="60px"
-                  width="60px"
+                  :src="require('../assets/googleplay.png')"
+                  max-height="100px"
                 ></v-img
               ></span>
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
-                  height="60px"
-                  width="60px"
-                ></v-img
-              ></span>
-              <span class="px-3">
-                <v-img
-                  :src="require('../assets/logo-footer.png')"
-                  height="60px"
-                  width="60px"
-                ></v-img
-              ></span>
-              <span class="px-3">
-                <v-img
-                  :src="require('../assets/logo-footer.png')"
-                  height="60px"
-                  width="60px"
+                  :src="require('../assets/appstore.png')"
+                  max-height="100px"
                 ></v-img
               ></span>
             </v-col>
             <v-col cols="4" class="d-flex justify-start pt-5">
               <span class="px-3">
                 <v-img
-                  :src="require('../assets/logo-footer.png')"
-                  height="60px"
-                  width="60px"
+                  :src="require('../assets/img-qr.png')"
+                  max-height="100px"
+                  max-width="100px"
                 ></v-img
               ></span>
             </v-col>
