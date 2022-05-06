@@ -1,5 +1,8 @@
 <template>
   <v-col cols="12">
+    <v-row no-gutters>
+      <HeaderDetail header="บทความ" />
+    </v-row>
     <p>article</p>
     <div class="app-section">
       <div class="app-container">

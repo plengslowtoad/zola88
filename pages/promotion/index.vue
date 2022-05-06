@@ -1,6 +1,9 @@
 <template>
   <v-col cols="12">
-    <p>promotion</p>
+    <v-row no-gutters>
+      <HeaderDetail header="โปรโมชั่น" />
+    </v-row>
+
     <div class="app-section">
       <div class="app-container">
         <div class="app-grid">
