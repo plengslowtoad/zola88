@@ -1,34 +1,27 @@
 <template>
-  <v-col cols="12">
+  <v-col cols="12" class="bg-header">
     <v-row no-gutters>
       <HeaderDetail header="บทความ" />
     </v-row>
-    <!-- <p>article</p> -->
-    <!-- <div class="app-section">
-      <div class="app-container">
-        <div class="app-grid">
-          <div
-            class="tattoo-item mt-4"
-            v-for="(item, index) in articlesListMock"
-            :key="index"
-          >
-            <img :src="item.src" alt="" />
-            <h4>{{ item.title }}</h4>
-            <h6>{{ item.content }}</h6>
+
+    <div class="pa-5">
+      <div class="tw-grid tw-grid-rows-2 tw-grid-flow-col tw-gap-5">
+        <div
+          class="tattoo-item tw-rounded-xl"
+          v-for="(item, index) in articlesListMock"
+          :key="index"
+        >
+          <img :src="item.src" alt="" class="tw-rounded-t-xl" />
+
+          <div class="pa-4">
+            <p class="tw-text-[20px] tw-font-bold tw-text-[#f7b402] mb-0">
+              {{ item.title }}
+            </p>
+            <p class="tw-text-[13px] tw-text-[#D5D5D5] mb-0">
+              {{ item.content }}
+            </p>
           </div>
         </div>
-      </div>
-    </div> -->
-
-    <div class="tw-grid tw-grid-rows-2 tw-grid-flow-col gap-4">
-      <div
-        class="tattoo-item mt-4"
-        v-for="(item, index) in articlesListMock"
-        :key="index"
-      >
-        <img :src="item.src" alt="" />
-        <h4>{{ item.title }}</h4>
-        <h6>{{ item.content }}</h6>
       </div>
     </div>
   </v-col>
@@ -82,27 +75,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.app-section {
-  padding: 20px;
-}
-
-.app-container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.tattoo-item {
   background-color: rgba(0, 0, 0, 0.404);
-}
-
-.app-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 16px;
 }
 
 .tattoo-item img {
   display: block;
   width: 100%;
   cursor: zoom-in;
+}
+
+.bg-header {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://zola88.com/wp-content/uploads/2021/08/bg.png);
 }
 </style>
