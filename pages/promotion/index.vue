@@ -4,7 +4,7 @@
       <HeaderDetail header="โปรโมชั่น" />
     </v-row>
 
-    <div class="app-section">
+    <!-- <div class="app-section">
       <div class="app-container">
         <div class="app-grid">
           <div
@@ -15,6 +15,28 @@
             <img :src="item.src" alt="" />
             <h4>{{ item.title }}</h4>
             <h6>{{ item.content }}</h6>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="py-5 px-10">
+      <div class="app-container">
+        <!-- <div class="tw-grid tw-grid-cols-1 tw-gap-4 pa-10 tw-bg-black/[.60]"> -->
+        <div class="tw-grid tw-grid-rows-1  tw-gap-4 pa-10 tw-bg-black/[.60]">
+          <div
+            class="tattoo-item mt-4"
+            v-for="(item, index) in promotionsListMock"
+            :key="index"
+          >
+            <img :src="item.src" alt="" />
+
+            <p class="tw-text-[25px] tw-font-bold tw-text-white text-center mt-8">
+              {{ item.title }}
+            </p>
+            <p class="tw-text-[25px] tw-text-white text-center">
+              {{ item.content }}
+            </p>
           </div>
         </div>
       </div>
@@ -63,10 +85,10 @@ export default {
 }
 
 .app-container {
-  max-width: 800px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.404);
+//   background-color: rgba(0, 0, 0, 0.404);
 }
 
 .app-grid {
@@ -77,8 +99,13 @@ export default {
 }
 
 .tattoo-item img {
-  display: block;
-  width: 100%;
-  cursor: zoom-in;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.404);
+
+//     display: block;
+//   width: 100%;
+//   cursor: zoom-in;
 }
 </style>
