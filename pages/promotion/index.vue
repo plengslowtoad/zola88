@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12">
+  <v-col cols="12" class="bg-header">
     <v-row no-gutters>
       <HeaderDetail header="โปรโมชั่น" />
     </v-row>
@@ -23,7 +23,7 @@
     <div class="py-5 px-10">
       <div class="app-container">
         <!-- <div class="tw-grid tw-grid-cols-1 tw-gap-4 pa-10 tw-bg-black/[.60]"> -->
-        <div class="tw-grid tw-grid-rows-1  tw-gap-4 pa-10 tw-bg-black/[.60]">
+        <div class="tw-grid tw-grid-rows-1 tw-gap-4 pa-10 tw-bg-black/[.60]">
           <div
             class="tattoo-item mt-4"
             v-for="(item, index) in promotionsListMock"
@@ -31,7 +31,9 @@
           >
             <img :src="item.src" alt="" />
 
-            <p class="tw-text-[25px] tw-font-bold tw-text-white text-center mt-8">
+            <p
+              class="tw-text-[25px] tw-font-bold tw-text-white text-center mt-8"
+            >
               {{ item.title }}
             </p>
             <p class="tw-text-[25px] tw-text-white text-center">
@@ -88,7 +90,7 @@ export default {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
-//   background-color: rgba(0, 0, 0, 0.404);
+  //   background-color: rgba(0, 0, 0, 0.404);
 }
 
 .app-grid {
@@ -104,8 +106,17 @@ export default {
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.404);
 
-//     display: block;
-//   width: 100%;
-//   cursor: zoom-in;
+  //     display: block;
+  //   width: 100%;
+  //   cursor: zoom-in;
+}
+.bg-header {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://zola88.com/wp-content/uploads/2021/08/bg.png);
 }
 </style>

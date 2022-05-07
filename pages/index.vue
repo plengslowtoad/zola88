@@ -209,6 +209,7 @@
             </v-col>
           </v-row>
         </v-col>
+        <v-col cols="12" class="tw-h-[1400px] bg-title-3"></v-col>
       </v-col>
     </v-row>
   </v-col>
@@ -245,6 +246,16 @@ export default {
 }
 
 .bg-title-2 {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/home4.png");
+}
+
+.bg-title-3 {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
