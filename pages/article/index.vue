@@ -7,9 +7,14 @@
     <div class="pa-5">
       <div class="tw-grid tw-grid-rows-2 tw-grid-flow-col tw-gap-5">
         <div
-          class="tattoo-item tw-rounded-xl"
+          class="
+            tattoo-item
+            tw-rounded-xl tw-border-solid tw-border-2 tw-border-transparent
+            hover:tw-border-yellow-500
+          "
           v-for="(item, index) in articlesListMock"
           :key="index"
+          @click="goDetail(item)"
         >
           <img :src="item.src" alt="" class="tw-rounded-t-xl" />
 
@@ -70,6 +75,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    goDetail(item) {
+      console.log("item", item);
+    },
   },
 };
 </script>
