@@ -58,7 +58,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" class="bg-title tw-h-[450px]">
+      <v-col cols="12" class="bg-title tw-h-[550px]">
         <v-row no-gutters class="pa-15">
           <v-col cols="12" class="d-flex justify-start">
             <span
@@ -76,7 +76,7 @@
             </span>
           </v-col>
           <v-col cols="10">
-            <span class="tw-text-[26px] pa-5"
+            <span class="tw-text-[26px] pa-15"
               >ZOLA 88 คาสิโนออนไลน์ สล็อตออนไลน์ เกมส์ยิงปลา เดิมพันกีฬา
               ครบวงจรที่นี่ที่เดียว เราคือเว็บพนันออนไลน์ อันดับ 1
               ของเอเซียด้วยระบบฝากถอนที่รวดเร็ว ปลอดภัย มั่นคง
@@ -97,15 +97,36 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" class="bg-title-2 tw-h-[700px] d-flex justify-end">
-        <div class="tw-w-[800px]">
-          <v-img
-            class="test"
-            max-height="200%"
-            max-width="800px"
-            :src="require('../assets/home4-player.png')"
-          ></v-img>
-        </div>
+      <v-col cols="12" class="bg-title-2 tw-h-[700px]">
+        <v-row no-gutters>
+          <v-col cols="3">
+            <v-img
+              max-height="200%"
+              max-width="400px"
+              :src="require('../assets/home4-girl.png')"
+            ></v-img>
+          </v-col>
+          <v-col cols="3" class="d-flex align-center justify-start">
+            <div>
+              <v-img
+                class="position-card"
+                max-height="200%"
+                max-width="400px"
+                :src="require('../assets/home4-card.png')"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col cols="6">
+            <div class="tw-w-[800px] d-flex justify-end">
+              <v-img
+                class="test"
+                max-height="200%"
+                max-width="800px"
+                :src="require('../assets/home4-player.png')"
+              ></v-img>
+            </div>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-col>
@@ -151,11 +172,18 @@ export default {
   background-image: url("../assets/home4.png");
 }
 
+.position-card {
+  position: relative;
+  z-index: 2;
+  right: 250px;
+  top: 40px;
+}
+
 .test {
   display: inline-block;
   position: relative;
   z-index: 1;
   top: -300px;
-  left: 100px;
+  left: 260px;
 }
 </style>
