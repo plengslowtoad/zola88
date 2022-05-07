@@ -98,11 +98,14 @@
         </v-row>
       </v-col>
       <v-col cols="12" class="bg-title-2 tw-h-[700px] d-flex justify-end">
-        <v-img
-          height="100%"
-          :aspect-ratio="16 / 9"
-          :src="require('../assets/home4-player.png')"
-        ></v-img>
+        <div class="tw-w-[800px]">
+          <v-img
+            class="test"
+            max-height="200%"
+            max-width="800px"
+            :src="require('../assets/home4-player.png')"
+          ></v-img>
+        </div>
       </v-col>
     </v-row>
   </v-col>
@@ -146,5 +149,13 @@ export default {
   background-size: cover;
   background-position: center;
   background-image: url("../assets/home4.png");
+}
+
+.test {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: -300px;
+  left: 100px;
 }
 </style>
