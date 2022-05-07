@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12">
+  <v-col cols="12" class="bg-header">
     <v-row no-gutters>
       <HeaderDetail header="วิธีเล่นเกม" />
     </v-row>
@@ -13,4 +13,13 @@ export default {};
 
 
 <style lang="scss" scoped>
+.bg-header {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://zola88.com/wp-content/uploads/2021/08/bg.png);
+}
 </style>

@@ -38,6 +38,7 @@
                 tw-text-transparent
                 px-5
               "
+              @click="$router.push('/')"
               >หน้าหลัก</span
             >
             <span
@@ -51,6 +52,7 @@
                 tw-text-transparent
                 px-5
               "
+              @click="$router.push('/promotion')"
               >โปรโมชั่น</span
             >
             <span
@@ -64,6 +66,7 @@
                 tw-text-transparent
                 px-5
               "
+              @click="$router.push('/article')"
               >บทความ</span
             >
             <span
@@ -77,6 +80,7 @@
                 tw-text-transparent
                 px-5
               "
+              @click="$router.push('/howtoplay')"
               >วิธีเล่น</span
             >
             <span
@@ -91,6 +95,7 @@
                 pl-5
                 tw-pr-[120px]
               "
+              @click="$router.push('/contactus')"
               >ติดต่อเรา</span
             >
           </v-col>
