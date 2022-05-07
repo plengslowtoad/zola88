@@ -151,23 +151,14 @@
               <v-row no-gutters>
                 <v-col cols="12" class="d-flex justify-end">
                   <v-img
-                    max-height="100%"
-                    max-width="250px"
+                    height="173px"
+                    max-height="173px"
+                    max-width="202"
                     :src="require('../assets/home-cockfight.png')"
                   ></v-img>
                 </v-col>
-              </v-row>
-            </v-col>
-            <v-col cols="3">
-              <v-row no-gutters>
-                <v-col cols="12" class="d-flex justify-center">
-                  <div>
-                    <v-img
-                      max-height="100%"
-                      max-width="250px"
-                      :src="require('../assets/home-td.png')"
-                    ></v-img>
-                  </div>
+                <v-col class="d-flex justify-end" cols="12">
+                  <span class="tw-text-[56px] tw-text-white">ชนไก่</span>
                 </v-col>
               </v-row>
             </v-col>
@@ -175,11 +166,29 @@
               <v-row no-gutters>
                 <v-col cols="12" class="d-flex justify-center">
                   <v-img
-                    height="230px"
-                    max-height="230px"
-                    max-width="350px"
+                    height="173px"
+                    max-height="173px"
+                    max-width="202"
+                    :src="require('../assets/home-td.png')"
+                  ></v-img>
+                </v-col>
+                <v-col class="d-flex justify-center" cols="12">
+                  <span class="tw-text-[56px] tw-text-white">เสือ มังกร</span>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="3">
+              <v-row no-gutters>
+                <v-col cols="12" class="d-flex justify-center">
+                  <v-img
+                    height="173px"
+                    max-height="173px"
+                    max-width="202"
                     :src="require('../assets/home-asset.png')"
                   ></v-img>
+                </v-col>
+                <v-col class="d-flex justify-center" cols="12">
+                  <span class="tw-text-[56px] tw-text-white">หวย</span>
                 </v-col>
               </v-row>
             </v-col>
@@ -187,10 +196,14 @@
               <v-row no-gutters>
                 <v-col cols="12" class="d-flex justify-start">
                   <v-img
-                    max-height="100%"
-                    max-width="250px"
+                    height="173px"
+                    max-height="173px"
+                    max-width="202"
                     :src="require('../assets/home-poker.png')"
-                  ></v-img>
+                  ></v-img
+                ></v-col>
+                <v-col class="d-flex justify-start" cols="12">
+                  <span class="tw-text-[56px] tw-text-white">บาคาร่า</span>
                 </v-col>
               </v-row>
             </v-col>
@@ -253,6 +266,6 @@ export default {
   position: relative;
   z-index: 1;
   top: -300px;
-  left: 260px;
+  left: 365px;
 }
 </style>
