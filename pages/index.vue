@@ -100,11 +100,13 @@
       <v-col cols="12" class="bg-title-2 tw-h-[700px]">
         <v-row no-gutters>
           <v-col cols="3">
-            <v-img
-              max-height="200%"
-              max-width="400px"
-              :src="require('../assets/home4-girl.png')"
-            ></v-img>
+            <div>
+              <v-img
+                max-height="700px"
+                max-width="400px"
+                :src="require('../assets/home4-girl.png')"
+              ></v-img>
+            </div>
           </v-col>
           <v-col cols="3" class="d-flex align-center justify-start">
             <div>
@@ -127,6 +129,73 @@
             </div>
           </v-col>
         </v-row>
+      </v-col>
+      <v-col
+        cols="12"
+        class="
+          tw-bg-[#202020]
+          tw-border-t-[30px]
+          tw-border-b-[30px]
+          tw-border-[#E5493B]
+          tw-min-h-[625px]
+        "
+      >
+        <v-col cols="12">
+          <span class="tw-text-[#DF3B2E] tw-text-[96px] d-flex justify-center"
+            >วิธีเล่นเกม</span
+          >
+        </v-col>
+        <v-col cols="12">
+          <v-row no-gutters>
+            <v-col cols="3">
+              <v-row no-gutters>
+                <v-col cols="12" class="d-flex justify-end">
+                  <v-img
+                    max-height="100%"
+                    max-width="250px"
+                    :src="require('../assets/home-cockfight.png')"
+                  ></v-img>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="3">
+              <v-row no-gutters>
+                <v-col cols="12" class="d-flex justify-center">
+                  <div>
+                    <v-img
+                      max-height="100%"
+                      max-width="250px"
+                      :src="require('../assets/home-td.png')"
+                    ></v-img>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="3">
+              <v-row no-gutters>
+                <v-col cols="12" class="d-flex justify-center">
+                  <v-img
+                    height="230px"
+                    max-height="230px"
+                    max-width="350px"
+                    :src="require('../assets/home-asset.png')"
+                  ></v-img>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="3">
+              <v-row no-gutters>
+                <v-col cols="12" class="d-flex justify-start">
+                  <v-img
+                    max-height="100%"
+                    max-width="250px"
+                    :src="require('../assets/home-poker.png')"
+                  ></v-img>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-col>
       </v-col>
     </v-row>
   </v-col>
