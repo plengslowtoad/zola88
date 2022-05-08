@@ -121,7 +121,7 @@
           <v-col cols="6">
             <div class="tw-w-[800px] d-flex justify-end">
               <v-img
-                class="test"
+                class="postion-main"
                 max-height="200%"
                 max-width="800px"
                 :src="require('../assets/home4-player.png')"
@@ -135,7 +135,6 @@
         class="
           tw-bg-[#202020]
           tw-border-t-[30px]
-          tw-border-b-[30px]
           tw-border-[#E5493B]
           tw-min-h-[625px]
         "
@@ -145,7 +144,10 @@
             >วิธีเล่นเกม</span
           >
         </v-col>
-        <v-col cols="12">
+        <v-col
+          cols="12"
+          class="tw-min-h-[450px] tw-border-b-[30px] tw-border-[#E5493B]"
+        >
           <v-row no-gutters>
             <v-col cols="3">
               <v-row no-gutters>
@@ -209,7 +211,108 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" class="tw-h-[1400px] bg-title-3"></v-col>
+        <v-col cols="12" class="tw-min-h-[1400px] pa-0 bg-title-3">
+          <v-row no-gutters>
+            <v-col cols="12" class="d-flex justify-center">
+              <v-img
+                class="position-game"
+                max-height="621"
+                max-width="613"
+                :src="require('../assets/home5-player.png')"
+              ></v-img>
+            </v-col>
+            <v-col cols="12">
+              <v-row no-gutters class="pa-15">
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img1.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img2.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img3.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img4.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="12">
+              <v-row no-gutters class="pa-15">
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img5.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img6.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img7.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+                <v-col cols="3" class="px-3">
+                  <span class="tw-text-white tw-text-[60px]">
+                    <v-img
+                      max-height="100%"
+                      :src="require('../assets/home5-img8.png')"
+                    ></v-img>
+                  </span>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="12" class="py-10 d-flex justify-center">
+              <v-img
+                max-height="219px"
+                :src="require('../assets/bottom-img1.png')"
+              ></v-img>
+            </v-col>
+            <v-col cols="12" class="py-10 d-flex justify-center">
+              <v-img
+                max-height="219px"
+                :src="require('../assets/bottom-img2.png')"
+              ></v-img>
+            </v-col>
+            <v-col cols="12" class="py-10 d-flex justify-center">
+              <v-img
+                max-height="219px"
+                :src="require('../assets/bottom-img3.png')"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-col>
       </v-col>
     </v-row>
   </v-col>
@@ -272,11 +375,17 @@ export default {
   top: 40px;
 }
 
-.test {
+.postion-main {
   display: inline-block;
   position: relative;
   z-index: 1;
   top: -300px;
   left: 365px;
+}
+
+.position-game {
+  position: relative;
+  z-index: 1;
+  bottom: 130px;
 }
 </style>
