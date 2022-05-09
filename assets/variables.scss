@@ -4,35 +4,23 @@
 // $font-size-root: 20px;
 
 $theme-colors: (
-  "primary": #173C5D,
+  "primary": #173c5d,
   "secondary": #11a294,
   "accent": #006ea0,
   "error": #bd2200,
   "info": #0a42dc,
   "success": #84bd00,
-  "warning": #FFC100,
+  "warning": #ffc100,
   "text2e": #2e2e2e,
 );
 
-$color-primary: #173C5D;
+$color-primary: #173c5d;
 $color-secondary: #11a294;
 $color-accent: #006ea0;
 $color-error: #bd2200;
 $color-info: #0a42dc;
 $color-success: #84bd00;
-$color-warning: #FFC100;
+$color-warning: #ffc100;
 $color-text2e: #2e2e2e;
 
-$body-font-family: 'DB-Helvethaica-X';
-// $body-font-family: "Prompt", Sans-serif;
-
-
-// $font-family:'DB-Helvethaica-X'
-
-// .v-application {
-//   [class*='text-'] {
-//     color: #36405a;
-//     font-family: $font-family, sans-serif !important;
-//   }
-//   font-family: $font-family, sans-serif !important;
-// }
+$body-font-family: "DB-Helvethaica-X";

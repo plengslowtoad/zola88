@@ -35,28 +35,24 @@ export default {
     return {
       promotionsListMock: [
         {
-          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_1-768x768.jpg",
-          src: require('@/assets/promotion1.png'),
+          src: require("@/assets/promotion1.png"),
           title: "",
           content: "",
         },
         {
-          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_3-768x768.jpg",
-          src: require('@/assets/promotion2.jpg'),
+          src: require("@/assets/promotion2.jpg"),
           title: "แนะนำเพื่อนรับ 20%",
           content:
             "เพียงแนะนำเพื่อนมาเล่นกับเรา รับไปเลย 20% ของยอดฝากเพื่อน ฝากมาก ได้มาก",
         },
         {
-          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_2-768x768.jpg",
-          src: require('@/assets/promotion3.jpg'),
+          src: require("@/assets/promotion3.jpg"),
           title: "ทุกยอดฝากรับ 20%",
           content:
             "พิเศษสุดๆ ทุกๆ ยอดฝากรับไปเลย 20% เพียงทำยอด 3 เท่า ถึงจะถอนได้",
         },
         {
-          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_0-768x768.jpg",
-          src: require('@/assets/promotion4.jpg'),
+          src: require("@/assets/promotion4.jpg"),
           title: "รับโบนัส 100%",
           content:
             "โปรโมชั่นพิเศษสุด สมัครใหม่ + ฝากแรกของวัน รับโบนัสไปเลยทันที 100% โดยไม่ต้องทำเทิร์น (ต้องทำยอดให้ได้ 5 เท่าถึงจะถอนได้)",
@@ -70,13 +66,16 @@ export default {
 
 <style lang="scss" scoped>
 .app-container {
-  max-width: 1100px;
+  // max-width: 1100px;
+  max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .tattoo-item img {
-  max-width: 750px;
+  // max-width: 750px;
+  // max-width: 46.875rem;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.404);
