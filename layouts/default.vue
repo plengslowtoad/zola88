@@ -7,10 +7,10 @@
             <v-row no-gutters>
               <v-col cols="12">
                 <v-btn color="red" class="ml-10 mt-10">
-                  <v-span class="tw-text-white">สมัครสมาชิก</v-span>
+                  <span class="tw-text-white">สมัครสมาชิก</span>
                 </v-btn>
                 <v-btn outlined color="white" class="ml-5 mt-10">
-                  <v-span class="tw-text-white">สมัครสมาชิก</v-span>
+                  <span class="tw-text-white">สมัครสมาชิก</span>
                 </v-btn>
               </v-col>
               <v-col cols="12" class="d-flex justify-center align-center">

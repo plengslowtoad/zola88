@@ -44,6 +44,7 @@
           <v-col cols="12" class="d-flex justify-center py-15">
             <span class="px-15">
               <v-img
+                class="tw-border-[8px] tw-border-rose-500"
                 height="364px"
                 max-height="364px"
                 max-width="338px"
@@ -52,6 +53,7 @@
             </span>
             <span class="px-15">
               <v-img
+                class="tw-border-[8px] tw-border-rose-500"
                 height="364px"
                 max-height="364px"
                 max-width="338px"
@@ -60,6 +62,7 @@
             </span>
             <span class="px-15">
               <v-img
+                class="tw-border-[8px] tw-border-rose-500"
                 height="364px"
                 max-height="364px"
                 max-width="338px"
