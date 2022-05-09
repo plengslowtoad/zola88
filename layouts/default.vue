@@ -38,7 +38,7 @@
                 tw-font-[1000]
                 tw-bg-clip-text
                 tw-text-transparent
-                px-5
+                px-3
               "
               @click="$router.push('/')"
               >หน้าหลัก</span
@@ -52,7 +52,7 @@
                 tw-font-[1000]
                 tw-bg-clip-text
                 tw-text-transparent
-                px-5
+                px-3
               "
               @click="$router.push('/promotion')"
               >โปรโมชั่น</span
@@ -66,7 +66,7 @@
                 tw-font-[1000]
                 tw-bg-clip-text
                 tw-text-transparent
-                px-5
+                px-3
               "
               @click="$router.push('/article')"
               >บทความ</span
@@ -80,7 +80,7 @@
                 tw-font-[1000]
                 tw-bg-clip-text
                 tw-text-transparent
-                px-5
+                px-3
               "
               @click="$router.push('/howtoplay')"
               >วิธีเล่น</span
@@ -94,8 +94,7 @@
                 tw-font-[1000]
                 tw-bg-clip-text
                 tw-text-transparent
-                pl-5
-                tw-pr-[120px]
+                px-3
               "
               @click="$router.push('/contactus')"
               >ติดต่อเรา</span
@@ -189,8 +188,9 @@
               <span class="px-3">
                 <v-img
                   :src="require('../assets/img-qr.png')"
-                  max-height="100px"
-                  max-width="100px"
+                  class="bg-qr"
+                  max-height="150px"
+                  max-width="150px"
                 ></v-img
               ></span>
             </v-col>
@@ -232,6 +232,12 @@ export default {
 
 .bg-logo {
   position: relative;
-  bottom: 40px;
+  bottom: 20px;
+}
+
+.bg-qr {
+  position: relative;
+  z-index: 1;
+  bottom: 50px;
 }
 </style>

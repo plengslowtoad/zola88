@@ -1,27 +1,12 @@
 <template>
   <v-col cols="12">
     <v-row no-gutters>
-      <v-col cols="12" class="tw-h-[917px]">
-        <!-- <v-carousel height="100%" v-model="model">
-          <v-carousel-item v-for="(color, i) in colors" :key="color">
-            <v-sheet :color="color" height="100%" tile>
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="text-h2">Slide {{ i + 1 }}</div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-        </v-carousel> -->
-
-        <v-carousel height="100%" v-model="model">
-          <v-carousel-item
-            v-for="(item, i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          >
-          </v-carousel-item>
-        </v-carousel>
+      <v-col cols="12" class="tw-h-[730px]">
+        <v-img
+          max-height="100%"
+          max-width="100%"
+          :src="require('../assets/bg-banner.png')"
+        ></v-img>
       </v-col>
       <v-col cols="12" class="bg-header">
         <v-row no-gutters>
@@ -236,7 +221,7 @@
               ></v-img>
             </v-col>
             <v-col cols="12">
-              <v-row no-gutters class="pa-15">
+              <v-row no-gutters class="px-15 pb-15">
                 <v-col cols="3" class="px-3">
                   <span class="tw-text-white tw-text-[60px]">
                     <v-img
@@ -414,7 +399,7 @@ export default {
   position: relative;
   z-index: 1;
   top: -300px;
-  left: 365px;
+  left: 175px;
 }
 
 .position-game {
