@@ -233,6 +233,7 @@ export default {
 .bg-logo {
   position: relative;
   bottom: 20px;
+  filter: drop-shadow(0px 0px 30px black);
 }
 
 .bg-qr {
