@@ -399,7 +399,7 @@ export default {
   position: relative;
   z-index: 1;
   top: -300px;
-  left: 175px;
+  left: 270px;
 }
 
 .position-game {
