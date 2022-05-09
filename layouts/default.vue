@@ -3,25 +3,27 @@
     <v-main>
       <v-container fluid class="pa-0">
         <v-row no-gutters>
-          <v-col
-            cols="12"
-            class="
-              tw-h-[337px]
-              pa-0
-              m-0
-              d-flex
-              justify-center
-              align-center
-              bg-header
-            "
-          >
-            <div>
-              <v-img
-                :src="require('../assets/logo-footer.png')"
-                height="300px"
-                width="300px"
-              ></v-img>
-            </div>
+          <v-col cols="12" class="tw-h-[337px] bg-header pa-0 m-0">
+            <v-row no-gutters>
+              <v-col cols="12">
+                <v-btn color="red" class="ml-10 mt-10">
+                  <v-span class="tw-text-white">สมัครสมาชิก</v-span>
+                </v-btn>
+                <v-btn outlined color="white" class="ml-5 mt-10">
+                  <v-span class="tw-text-white">สมัครสมาชิก</v-span>
+                </v-btn>
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center align-center">
+                <div>
+                  <v-img
+                    class="bg-logo"
+                    :src="require('../assets/logo-footer.png')"
+                    height="300px"
+                    width="300px"
+                  ></v-img>
+                </div>
+              </v-col>
+            </v-row>
           </v-col>
           <v-col
             cols="12"
@@ -105,7 +107,7 @@
     </v-main>
     <v-footer class="tw-p-0">
       <v-row no-gutters>
-        <v-col cols="12" class="tw-h-[720px] tw-bg-[red]">
+        <v-col cols="12" class="tw-h-[720px] bg-footer tw-bg-[#DF3B2E]">
           <v-row no-gutters justify="center">
             <v-col cols="12" class="d-flex justify-center pt-5">
               <div>
@@ -220,5 +222,16 @@ export default {
   background-size: cover;
   background-position: center;
   background-image: url("../assets/bg-header.png");
+}
+
+.bg-footer {
+  background-repeat: no-repeat;
+  background-image: url("../assets/footer-imgconner.png");
+  background-size: contain;
+}
+
+.bg-logo {
+  position: relative;
+  bottom: 40px;
 }
 </style>
