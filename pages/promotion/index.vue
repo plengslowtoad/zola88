@@ -35,24 +35,28 @@ export default {
     return {
       promotionsListMock: [
         {
-          src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_1-768x768.jpg",
+          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_1-768x768.jpg",
+          src: require('@/assets/promotion1.png'),
           title: "",
           content: "",
         },
         {
-          src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_3-768x768.jpg",
+          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_3-768x768.jpg",
+          src: require('@/assets/promotion2.jpg'),
           title: "แนะนำเพื่อนรับ 20%",
           content:
             "เพียงแนะนำเพื่อนมาเล่นกับเรา รับไปเลย 20% ของยอดฝากเพื่อน ฝากมาก ได้มาก",
         },
         {
-          src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_2-768x768.jpg",
+          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_2-768x768.jpg",
+          src: require('@/assets/promotion3.jpg'),
           title: "ทุกยอดฝากรับ 20%",
           content:
             "พิเศษสุดๆ ทุกๆ ยอดฝากรับไปเลย 20% เพียงทำยอด 3 เท่า ถึงจะถอนได้",
         },
         {
-          src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_0-768x768.jpg",
+          // src: "https://zola88.com/wp-content/uploads/2021/12/LINE_ALBUM_zola88.com_๒๑๑๒๒๓_0-768x768.jpg",
+          src: require('@/assets/promotion4.jpg'),
           title: "รับโบนัส 100%",
           content:
             "โปรโมชั่นพิเศษสุด สมัครใหม่ + ฝากแรกของวัน รับโบนัสไปเลยทันที 100% โดยไม่ต้องทำเทิร์น (ต้องทำยอดให้ได้ 5 เท่าถึงจะถอนได้)",
