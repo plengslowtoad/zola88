@@ -5,7 +5,7 @@
     </v-row>
 
     <div class="pa-5">
-      <div class="tw-grid tw-grid-rows-2 tw-grid-flow-col tw-gap-5">
+      <div class="tw-grid tw-grid-rows-1 tw-grid-flow-col tw-gap-5">
         <div
           class="
             tattoo-item
