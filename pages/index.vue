@@ -27,33 +27,28 @@
             </span>
           </v-col>
           <v-col cols="12" class="d-flex justify-center py-15">
-            <span class="px-15">
-              <v-img
-                class="tw-border-[8px] tw-border-rose-500"
-                height="364px"
-                max-height="364px"
-                max-width="338px"
-                src="https://picsum.photos/id/11/500/300"
-              ></v-img>
-            </span>
-            <span class="px-15">
-              <v-img
-                class="tw-border-[8px] tw-border-rose-500"
-                height="364px"
-                max-height="364px"
-                max-width="338px"
-                src="https://picsum.photos/id/11/500/300"
-              ></v-img>
-            </span>
-            <span class="px-15">
-              <v-img
-                class="tw-border-[8px] tw-border-rose-500"
-                height="364px"
-                max-height="364px"
-                max-width="338px"
-                src="https://picsum.photos/id/11/500/300"
-              ></v-img>
-            </span>
+            <v-sheet class="mx-auto" max-width="75%">
+              <v-slide-group prev-icon="" next-icon="" show-arrows>
+                <v-slide-item
+                  v-for="n in promotionsListMock"
+                  :key="n.src"
+                  v-slot="{ toggle }"
+                >
+                  <v-row no-gutters class="pa-5">
+                    <v-col>
+                      <v-img
+                        @click="toggle"
+                        class="tw-border-[8px] tw-border-rose-500"
+                        height="364px"
+                        max-height="364px"
+                        max-width="338px"
+                        :src="n.src"
+                      ></v-img>
+                    </v-col>
+                  </v-row>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
           </v-col>
         </v-row>
       </v-col>
@@ -322,6 +317,31 @@ export default {
   name: "IndexPage",
   data: () => ({
     model: 0,
+    promotionsListMock: [
+      {
+        src: require("@/assets/promotion1.png"),
+        title: "",
+        content: "",
+      },
+      {
+        src: require("@/assets/promotion2.jpg"),
+        title: "แนะนำเพื่อนรับ 20%",
+        content:
+          "เพียงแนะนำเพื่อนมาเล่นกับเรา รับไปเลย 20% ของยอดฝากเพื่อน ฝากมาก ได้มาก",
+      },
+      {
+        src: require("@/assets/promotion3.jpg"),
+        title: "ทุกยอดฝากรับ 20%",
+        content:
+          "พิเศษสุดๆ ทุกๆ ยอดฝากรับไปเลย 20% เพียงทำยอด 3 เท่า ถึงจะถอนได้",
+      },
+      {
+        src: require("@/assets/promotion4.jpg"),
+        title: "รับโบนัส 100%",
+        content:
+          "โปรโมชั่นพิเศษสุด สมัครใหม่ + ฝากแรกของวัน รับโบนัสไปเลยทันที 100% โดยไม่ต้องทำเทิร์น (ต้องทำยอดให้ได้ 5 เท่าถึงจะถอนได้)",
+      },
+    ],
     items: [
       {
         src: "https://zola88.com/wp-content/uploads/2021/07/1627039872_33ec925b478f7a669e1c.jpg",
@@ -406,5 +426,9 @@ export default {
   position: relative;
   z-index: 1;
   bottom: 130px;
+}
+
+.theme--light.v-sheet {
+  background-color: unset;
 }
 </style>
